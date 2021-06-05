@@ -27,7 +27,7 @@ struct ContentView: View {
                     .padding(.leading)
                 TextField("name@email.com", text: $email)
                     .autocapitalization(.none)
-                    .disableAutocorrection(false)
+                    .disableAutocorrection(true)
             }
             .frame(width: UIScreen.main
                     .bounds.width-50, height: 48, alignment: .center)
@@ -40,7 +40,7 @@ struct ContentView: View {
                 Image(systemName: "lock")
                     .font(.title2)
                     .padding(.leading)
-                TextField("***********", text: $password)
+                SecureField("***********", text: $password)
             }
             .frame(width: UIScreen.main
                     .bounds.width-50, height: 48, alignment: .center)
