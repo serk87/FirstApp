@@ -13,6 +13,7 @@
 		D240419A266B439E001859C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2404199266B439E001859C3 /* Assets.xcassets */; };
 		D240419D266B439E001859C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D240419C266B439E001859C3 /* Preview Assets.xcassets */; };
 		D274D5FF266B65A100ACC112 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D274D5FE266B65A100ACC112 /* SwiftyJSON */; };
+		D274D602266B8E6100ACC112 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274D601266B8E6100ACC112 /* UserObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D2404199266B439E001859C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D240419C266B439E001859C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D240419E266B439E001859C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D274D601266B8E6100ACC112 /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		FA22D374330025E01FCC56C9 /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				D2404195266B439C001859C3 /* FirstAppApp.swift */,
 				D2404197266B439C001859C3 /* ContentView.swift */,
+				D274D601266B8E6100ACC112 /* UserObject.swift */,
 				D2404199266B439E001859C3 /* Assets.xcassets */,
 				D240419E266B439E001859C3 /* Info.plist */,
 				D240419B266B439E001859C3 /* Preview Content */,
@@ -216,6 +219,7 @@
 			files = (
 				D2404198266B439C001859C3 /* ContentView.swift in Sources */,
 				D2404196266B439C001859C3 /* FirstAppApp.swift in Sources */,
+				D274D602266B8E6100ACC112 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
