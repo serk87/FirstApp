@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 
 struct ContentView: View {
     @State var email = ""
     @State var password = ""
+    let parameters: [String: String] = [
+        "email": "vasya@mail.com",
+        "password":"qwerty"
+    ]
     var body: some View {
         VStack {
            Image("logo")
@@ -45,6 +51,16 @@ struct ContentView: View {
             
             Button(action: {
                 
+                AF.request("http://cinema.areas.su/auth/logi/Users/luser/Library/Developer/Xcode/DerivedData/FirstApp-efftvebbqnouhxfzmlzrteaxryxk/SourcePackages/checkouts/SwiftyJSON/Examplen", method: .post).validate().responseJSON { response in
+                    switch response.result {
+                    case .success(let value):
+                        let json = JSON(value)
+                        print("JSON: \(json)")
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+
             }, label: {
                 Text("SIGN IN")
                     .foregroundColor(.white)
