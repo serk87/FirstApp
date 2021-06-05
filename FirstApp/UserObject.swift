@@ -13,8 +13,8 @@ class UserObject: ObservableObject {
     
     func login(email: String, password: String) {
         let parameters: [String: String] = [
-            "email": "vasya@mail.com",
-            "password":"qwerty"
+            "email": email,
+            "password": password
         ]
         let url = "http://cinema.areas.su/auth/login"
         AF.request(url, method: .post, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default).validate().responseJSON { response in

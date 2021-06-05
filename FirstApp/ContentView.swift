@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State var email = ""
     @State var password = ""
-    
+    @ObservedObject var userObject = UserObject()
     var body: some View {
         VStack {
            Image("logo")
@@ -26,6 +26,8 @@ struct ContentView: View {
                     .font(.title2)
                     .padding(.leading)
                 TextField("name@email.com", text: $email)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(false)
             }
             .frame(width: UIScreen.main
                     .bounds.width-50, height: 48, alignment: .center)
@@ -47,7 +49,7 @@ struct ContentView: View {
             
             Button(action: {
                 
-                
+                userObject.login(email: email, password: password)
 
             }, label: {
                 Text("SIGN IN")
