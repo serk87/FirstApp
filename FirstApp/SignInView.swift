@@ -49,9 +49,8 @@ struct SignInView: View {
             
             
             Button(action: {
-                
                 userObject.login(email: email, password: password)
-
+                page = 2
             }, label: {
                 Text("SIGN IN")
                     .foregroundColor(.white)
