@@ -8,10 +8,11 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct SignInView: View {
     @State var email = ""
     @State var password = ""
     @ObservedObject var userObject = UserObject()
+    @Binding var page : Int
     var body: some View {
         VStack {
            Image("logo")
@@ -70,6 +71,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignInView(page: .constant(1))
     }
 }

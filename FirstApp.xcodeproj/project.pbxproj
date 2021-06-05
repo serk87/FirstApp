@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		7DDB3AE1E808639A4FDF49DB /* Pods_FirstApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D98EAFC1373210F17909E74 /* Pods_FirstApp.framework */; };
 		D2404196266B439C001859C3 /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2404195266B439C001859C3 /* FirstAppApp.swift */; };
-		D2404198266B439C001859C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2404197266B439C001859C3 /* ContentView.swift */; };
+		D2404198266B439C001859C3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2404197266B439C001859C3 /* SignInView.swift */; };
 		D240419A266B439E001859C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2404199266B439E001859C3 /* Assets.xcassets */; };
 		D240419D266B439E001859C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D240419C266B439E001859C3 /* Preview Assets.xcassets */; };
 		D274D5FF266B65A100ACC112 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D274D5FE266B65A100ACC112 /* SwiftyJSON */; };
 		D274D602266B8E6100ACC112 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274D601266B8E6100ACC112 /* UserObject.swift */; };
 		D274D605266B9C1A00ACC112 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D274D604266B9C1A00ACC112 /* Launch Screen.storyboard */; };
+		D274D608266BA09200ACC112 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274D607266BA09200ACC112 /* RootView.swift */; };
+		D274D60C266BA3FC00ACC112 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274D60B266BA3FC00ACC112 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,14 @@
 		6F0EC730CF470A06A5CC1B95 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
 		D2404192266B439C001859C3 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2404195266B439C001859C3 /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
-		D2404197266B439C001859C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2404197266B439C001859C3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D2404199266B439E001859C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D240419C266B439E001859C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D240419E266B439E001859C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D274D601266B8E6100ACC112 /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		D274D604266B9C1A00ACC112 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D274D607266BA09200ACC112 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D274D60B266BA3FC00ACC112 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FA22D374330025E01FCC56C9 /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				D2404195266B439C001859C3 /* FirstAppApp.swift */,
-				D2404197266B439C001859C3 /* ContentView.swift */,
+				D274D607266BA09200ACC112 /* RootView.swift */,
+				D2404197266B439C001859C3 /* SignInView.swift */,
+				D274D60B266BA3FC00ACC112 /* MainView.swift */,
 				D274D604266B9C1A00ACC112 /* Launch Screen.storyboard */,
 				D274D601266B8E6100ACC112 /* UserObject.swift */,
 				D2404199266B439E001859C3 /* Assets.xcassets */,
@@ -221,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2404198266B439C001859C3 /* ContentView.swift in Sources */,
+				D274D608266BA09200ACC112 /* RootView.swift in Sources */,
+				D2404198266B439C001859C3 /* SignInView.swift in Sources */,
 				D2404196266B439C001859C3 /* FirstAppApp.swift in Sources */,
+				D274D60C266BA3FC00ACC112 /* MainView.swift in Sources */,
 				D274D602266B8E6100ACC112 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
