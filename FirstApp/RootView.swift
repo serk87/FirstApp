@@ -12,6 +12,8 @@ struct RootView: View {
     var body: some View {
         if page == 1 {
             SignInView(page: $page)
+        } else if page == 2 {
+            MainView(page: $page)
         }
     }
 }
