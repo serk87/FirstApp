@@ -51,7 +51,7 @@ struct ContentView: View {
             
             Button(action: {
                 
-                AF.request("http://cinema.areas.su/auth/logi/Users/luser/Library/Developer/Xcode/DerivedData/FirstApp-efftvebbqnouhxfzmlzrteaxryxk/SourcePackages/checkouts/SwiftyJSON/Examplen", method: .post).validate().responseJSON { response in
+                AF.request("http://cinema.areas.su/auth/login", method: .post, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default).validate().responseJSON { response in
                     switch response.result {
                     case .success(let value):
                         let json = JSON(value)
