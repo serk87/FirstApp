@@ -17,10 +17,21 @@ struct HomeView: View {
                 Spacer()
                 Image(systemName: "bell")
             }.padding()
+            ScrollView(.horizontal, showsIndicators: false, content: {
+                HStack {
+                    ForEach(0...15, id: \.self) { _ in
+                        Image("logo")
+                            .resizable()
+                            .frame(width: 75, height: 75, alignment: .center)
+                    }
+                }
+                .border(Color.black)
+            })
+            
+            Spacer()
         }
     }
 }
-
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()

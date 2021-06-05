@@ -88,14 +88,9 @@
 		D2404194266B439C001859C3 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				D2404195266B439C001859C3 /* FirstAppApp.swift */,
-				D274D607266BA09200ACC112 /* RootView.swift */,
-				D2404197266B439C001859C3 /* SignInView.swift */,
-				D274D60B266BA3FC00ACC112 /* MainView.swift */,
-				D274D604266B9C1A00ACC112 /* Launch Screen.storyboard */,
-				D274D60F266BAB0700ACC112 /* HomeView.swift */,
-				D274D601266B8E6100ACC112 /* UserObject.swift */,
-				D2404199266B439E001859C3 /* Assets.xcassets */,
+				D274D616266BB29800ACC112 /* Common */,
+				D274D612266BB26B00ACC112 /* View */,
+				D274D614266BB28000ACC112 /* Object */,
 				D240419E266B439E001859C3 /* Info.plist */,
 				D240419B266B439E001859C3 /* Preview Content */,
 			);
@@ -108,6 +103,35 @@
 				D240419C266B439E001859C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D274D612266BB26B00ACC112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D274D607266BA09200ACC112 /* RootView.swift */,
+				D2404197266B439C001859C3 /* SignInView.swift */,
+				D274D60B266BA3FC00ACC112 /* MainView.swift */,
+				D274D60F266BAB0700ACC112 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D274D614266BB28000ACC112 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				D274D601266B8E6100ACC112 /* UserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		D274D616266BB29800ACC112 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D2404195266B439C001859C3 /* FirstAppApp.swift */,
+				D274D604266B9C1A00ACC112 /* Launch Screen.storyboard */,
+				D2404199266B439E001859C3 /* Assets.xcassets */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
