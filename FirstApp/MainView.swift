@@ -9,8 +9,25 @@ import SwiftUI
 
 struct MainView: View {
     @Binding var page : Int
+    @State var select = 1
     var body: some View {
-        Text("Hello, World!")
+        TabView(selection: $select) {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }.tag(1)
+            Text("Tab 2")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Explore")
+                }.tag(2)
+            Text("Tab 3")
+                .tabItem {
+                    Image(systemName: "plus.app")
+                    Text("Upload")
+                }.tag(3)
+        }
     }
 }
 
