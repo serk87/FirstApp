@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    @StateObject var movieObject = MovieObject()
+    
     var body: some View {
         VStack {
             HStack {
@@ -32,6 +35,9 @@ struct HomeView: View {
             }
             
             Spacer()
+        }
+        .onAppear {
+            movieObject.getMovies()
         }
     }
 }
