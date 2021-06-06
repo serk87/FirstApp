@@ -27,6 +27,9 @@ struct HomeView: View {
                 }
                 .border(Color.black)
             })
+            .onAppear {
+                MovieObject().getMovies()
+            }
             
             Spacer()
         }

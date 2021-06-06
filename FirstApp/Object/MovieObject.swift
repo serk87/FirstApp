@@ -15,12 +15,15 @@ class MovieObject: ObservableObject {
     
     func getMovies() {
         let url = "http://cinema.areas.su/movies"
-        AF.request(url, method: .get).validate().responseJSON { response in
+        let parameters : [String: String] = [
+            "filter" : "new"
+        ]
+        AF.request(url, method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
                 for index in 0..<json.count {
-                    print(json[index]["poster"].stringValue)
+                    self.posters.append(json[index]["poster"].stringValue)
                 }
             case .failure(let error):
                 print(error)
