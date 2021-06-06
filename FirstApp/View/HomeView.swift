@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct HomeView: View {
 
@@ -22,10 +23,13 @@ struct HomeView: View {
             }.padding()
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack {
-                    ForEach(0...15, id: \.self) { _ in
-                        Image("logo")
-                            .resizable()
-                            .frame(width: 75, height: 75, alignment: .center)
+//                    ForEach(0...15, id: \.self) { _ in
+//                        Image("logo")
+//                            .resizable()
+//                            .frame(width: 75, height: 75, alignment: .center)
+//                    }
+                    ForEach(movieObject.posters, id: \.self) { poster in
+                        
                     }
                 }
                 .border(Color.black)
