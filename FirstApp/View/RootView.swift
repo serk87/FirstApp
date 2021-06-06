@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @State var page = 1
+    @State var page = 2
     var body: some View {
         if page == 1 {
             SignInView(page: $page)
