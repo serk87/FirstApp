@@ -29,7 +29,7 @@ struct HomeView: View {
 //                            .frame(width: 75, height: 75, alignment: .center)
 //                    }
                     ForEach(movieObject.posters, id: \.self) { poster in
-                        
+                        WebImage(url: URL(string: "http://cinema.areas.su/up/images/\(poster)"))
                     }
                 }
                 .border(Color.black)
