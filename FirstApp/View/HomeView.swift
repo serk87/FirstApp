@@ -30,6 +30,10 @@ struct HomeView: View {
 //                    }
                     ForEach(movieObject.posters, id: \.self) { poster in
                         WebImage(url: URL(string: "http://cinema.areas.su/up/images/\(poster)"))
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                            .clipShape(Circle())
+                        
                     }
                 }
                 .border(Color.black)
