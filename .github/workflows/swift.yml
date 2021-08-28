@@ -15,6 +15,6 @@ jobs:
     - name: Install Bundle
       run: bundle install
     - name: Build
-      run: bundle exec fastlane buildLane
+      run: bundle exec fastlane gym --skip_codesigning true --skip_package_ipa true --clean true
     - name: Upload build
       uses: actions/upload-artifact@v2
