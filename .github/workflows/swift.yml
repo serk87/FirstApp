@@ -10,10 +10,11 @@ jobs:
   build:
 
     runs-on: macos-latest
-
     steps:
     - uses: actions/checkout@v2
+    - name: Install Bundle
+      run: bundle install
     - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      run: bundle exec fastlane buildLane
+    - name: Upload build
+      uses: actions/upload-artifact@v2
